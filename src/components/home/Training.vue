@@ -17,27 +17,25 @@ import { CheckCircleIcon } from "@heroicons/vue/24/solid";
         >
           Avantages
         </h1>
-        <ul
-          class="text-lg space-y-4 px-8 mt-4 flex flex-col items-center lg:items-start"
-        >
+        <ul class="lg:text-lg text-sm space-y-4 px-8 mt-4">
           <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
+            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
             <span>01 Mois en présentiel</span>
           </li>
           <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
+            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
             <span>Freelance</span>
           </li>
           <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
+            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
             <span>Emplois garantis pour les 03 meilleurs</span>
           </li>
           <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
+            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
             <span>02 mois de suivi</span>
           </li>
           <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
+            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
             <span>Attestation de formation</span>
           </li>
         </ul>
@@ -47,19 +45,17 @@ import { CheckCircleIcon } from "@heroicons/vue/24/solid";
         >
           Débouchés
         </h1>
-        <ul
-          class="text-lg space-y-4 px-8 mt-4 flex flex-col items-center lg:items-start"
-        >
+        <ul class="lg:text-lg text-sm space-y-4 px-8 mt-4">
           <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
+            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
             <span>Community Manager</span>
           </li>
           <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
+            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
             <span>Accompagnement des e-commerçants</span>
           </li>
           <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
+            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
             <span>Responsable des contenus</span>
           </li>
         </ul>
