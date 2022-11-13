@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import bg from "@/assets/logo_3d.jpg";
 import { HomeIcon, ChevronRightIcon } from "@heroicons/vue/24/outline";
+
 export interface Link {
   label: string;
   route: string;
   params?: string;
 }
+
 const props = defineProps({
   title: { required: true, type: String },
   links: {
