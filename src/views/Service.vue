@@ -6,7 +6,7 @@ import {
   CheckCircleIcon,
 } from "@heroicons/vue/24/solid";
 import Banner from "@/components/Banner.vue";
-import type { Link } from "../components/Banner.vue";
+import Link from "../types/Link";
 const links: Array<Link> = [
   {
     label: "Services",

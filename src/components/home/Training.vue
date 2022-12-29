@@ -1,121 +1,124 @@
 <script setup lang="ts">
-import { CheckCircleIcon } from "@heroicons/vue/24/solid";
+import bg from "@/assets/training2.jpg";
+import CommunityManger from "../training/CommunityManger.vue";
+import PubFacebook from "../training/PubFacebook.vue";
+import Design from "../training/Design.vue";
+import { ref } from "vue";
+
+const show = ref(1);
 </script>
 <template>
-  <div class="w-full py-10 xl:px-48 px-10 relative">
-    <div>
-      <h1 class="font-bold text-center text-2xl md:text-4xl">
-        Notre formation Community Manager
-      </h1>
-    </div>
+  <div
+    :style="`background-image: url(${bg})`"
+    class="w-full bg-no-repeat bg-cover bg-fixed"
+  >
     <div
-      class="relative mt-10 flex flex-col-reverse lg:flex-row items-center lg:items-start justify-center md:space-x-8"
+      class="bg-white/50 w-full lg:py-20 py-10 xl:px-36 md:px-10 px-4 relative text-black"
     >
-      <div class="p-4 flex flex-col items-center lg:items-start">
-        <h1
-          class="font-bold bg-smart-blue text-white inline-block px-8 py-2 text-xl"
-        >
-          Avantages
-        </h1>
-        <ul class="lg:text-lg text-sm space-y-4 px-8 mt-4">
-          <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
-            <span>01 Mois en présentiel</span>
-          </li>
-          <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
-            <span>Freelance</span>
-          </li>
-          <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
-            <span>Emplois garantis pour les 03 meilleurs</span>
-          </li>
-          <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
-            <span>02 mois de suivi</span>
-          </li>
-          <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
-            <span>Attestation de formation</span>
-          </li>
-        </ul>
-
-        <h1
-          class="font-bold bg-smart-blue text-white inline-block mt-10 px-8 py-2 text-xl"
-        >
-          Débouchés
-        </h1>
-        <ul class="lg:text-lg text-sm space-y-4 px-8 mt-4">
-          <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
-            <span>Community Manager</span>
-          </li>
-          <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
-            <span>Accompagnement des e-commerçants</span>
-          </li>
-          <li class="flex space-x-2 items-center">
-            <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-[#193334]" />
-            <span>Responsable des contenus</span>
-          </li>
-        </ul>
-      </div>
-      <div class="sm:block hidden relative lg:mt-0 mt-4">
+      <div class="w-full flex justify-center">
         <div
-          class="h-28 w-28 p-4 flex justify-center items-center rounded-full bg-red-500 absolute right-0 -top-10 rotate-12"
+          class="rounded-full shadow bg-smart-blue px-4 py-2 inline-flex items-center space-x-3 mx-auto text-white uppercase font-medium text-xs sm:text-sm"
         >
-          <h1 class="text-white font-bold text-xl text-center">50 000 XFA</h1>
+          <div class="w-2 h-2 bg-white rounded-full"></div>
+          <h1>Nos Formations</h1>
+          <div class="w-2 h-2 bg-white rounded-full"></div>
         </div>
-        <img
-          src="@/assets/boy1.jpg"
-          class="lg:w-96 lg:h-[500px] h-60 w-full object-cover rounded-xl shadow-2xl shadow-smart-blue-2"
-        />
       </div>
-    </div>
-    <div class="grid lg:grid-cols-4 mt-8 gap-6 md:grid-cols-2 grid-cols-1">
-      <div
-        class="bg-gray-800 flex flex-col space-y-4 justify-center items-center p-4 rounded-xl"
-      >
-        <h1 class="text-smart-blue text-sm">Module 1</h1>
-        <h3 class="text-white font-bold lg:text-xl">Marketing Digitale</h3>
+      <div class="mt-6">
+        <h1 class="font-bold text-5xl text-center">
+          <span class="text-smart-blue">Formations</span> Certifiantes
+        </h1>
       </div>
       <div
-        class="bg-gray-800 flex flex-col space-y-4 justify-center items-center p-4 rounded-xl"
+        class="justify-start rounded-full lg:flex hidden space-x-8 mt-8 mx-auto px-1 bg-smart-blue"
       >
-        <h1 class="text-smart-blue text-sm">Module 2</h1>
-        <h3 class="text-white font-bold lg:text-xl">L'art de la vente</h3>
+        <button
+          type="button"
+          @click="show = 1"
+          :class="[
+            show == 1
+              ? 'bg-white px-4 py-5 text-lg rounded-l-full text-smart-blue border-y-4 font-bold border-smart-blue'
+              : 'bg-smart-blue px-4 py-5 text-lg rounded-l-full text-white border-b-4 font-bold border-smart-blue',
+          ]"
+        >
+          Community Manager
+        </button>
+        <button
+          type="button"
+          @click="show = 2"
+          :class="[
+            show == 2
+              ? 'bg-white px-4 py-5 text-lg  text-smart-blue border-y-4 font-bold border-smart-blue'
+              : 'bg-smart-blue px-4 py-5 text-lg text-white border-b-4 font-bold border-smart-blue',
+          ]"
+        >
+          Publicité Facebook
+        </button>
+        <button
+          type="button"
+          @click="show = 3"
+          :class="[
+            show == 3
+              ? 'bg-white px-4 py-5 text-lg  text-smart-blue border-y-4 font-bold border-smart-blue'
+              : 'bg-smart-blue px-4 py-5 text-lg text-white border-b-4 font-bold border-smart-blue',
+          ]"
+        >
+          Graphic Design
+        </button>
       </div>
-      <div
-        class="bg-gray-800 flex flex-col space-y-4 justify-center items-center p-4 rounded-xl"
-      >
-        <h1 class="text-smart-blue text-sm">Module 3</h1>
-        <h3 class="text-white font-bold lg:text-xl">Outils du CM</h3>
-      </div>
-      <div
-        class="bg-gray-800 flex flex-col space-y-4 justify-center items-center p-4 rounded-xl"
-      >
-        <h1 class="text-smart-blue text-sm">Module 4</h1>
-        <h3 class="text-white font-bold lg:text-xl">Facebook & Wathsapp</h3>
-      </div>
-    </div>
-    <div class="flex justify-center items-center mt-8">
-      <a
-        href="#"
-        class="bg-smart-blue py-2 px-4 hover:bg-smart-blue-2 font-bold text-white z-0 right-0 rounded-md inline-block mx-auto text-lg sm:text-xl"
-      >
-        Je m'inscris
-      </a>
-    </div>
 
-    <div class="mt-10 p-4 flex justify-center">
-      <iframe
-        class="md:w-[500px] w-full h-[300px]"
-        src="https://www.youtube.com/embed/glQvSaTpH0Y"
-        title="Doing Smart - Pourquoi devenir community manager ?"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div
+        class="justify-start lg:hidden flex flex-col rounded-full space-y-8 mt-8 mx-auto px-2"
+      >
+        <button
+          type="button"
+          @click="show = 1"
+          :class="[
+            show == 1
+              ? 'bg-white p-2 text-sm rounded-full text-smart-blue border-4 font-bold border-smart-blue'
+              : 'bg-smart-blue p-2 text-sm rounded-full text-white border-4 font-bold border-smart-blue',
+          ]"
+        >
+          Community Manager
+        </button>
+        <button
+          type="button"
+          @click="show = 2"
+          :class="[
+            show == 2
+              ? 'bg-white p-2 text-sm rounded-full text-smart-blue border-4 font-bold border-smart-blue'
+              : 'bg-smart-blue p-2 text-sm rounded-full text-white border-4 font-bold border-smart-blue',
+          ]"
+        >
+          Publicité Facebook
+        </button>
+        <button
+          type="button"
+          @click="show = 3"
+          :class="[
+            show == 3
+              ? 'bg-white p-2 text-sm rounded-full text-smart-blue border-4 font-bold border-smart-blue'
+              : 'bg-smart-blue p-2 text-sm rounded-full text-white border-4 font-bold border-smart-blue',
+          ]"
+        >
+          Graphic Design
+        </button>
+      </div>
+
+      <div class="py-6">
+        <CommunityManger v-if="show == 1" />
+        <PubFacebook v-if="show == 2" />
+        <Design v-if="show == 3" />
+      </div>
+
+      <div class="flex justify-center items-center mt-8">
+        <a
+          href="#"
+          class="bg-smart-blue py-2 px-4 hover:bg-smart-blue-2 font-bold text-white z-0 right-0 rounded-full inline-block mx-auto text-lg sm:text-xl"
+        >
+          Je m'inscris
+        </a>
+      </div>
     </div>
   </div>
 </template>

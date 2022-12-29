@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Banner from "@/components/Banner.vue";
-import type { Link } from "../components/Banner.vue";
+import Link from "../types/Link";
 import { HomeIcon } from "@heroicons/vue/24/outline";
 import {
   UserIcon,

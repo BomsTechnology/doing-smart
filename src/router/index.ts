@@ -15,6 +15,16 @@ const websiteName: String = "Doing Smart";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
+    name: "start",
+    components: {
+      default: () => import("@/views/Start.vue"),
+    },
+    meta: {
+      title: "Agence de marketing digital - Accueil | " + websiteName,
+    },
+  },
+  {
+    path: "/home",
     name: "home",
     components: {
       default: () => import("@/views/Home.vue"),
