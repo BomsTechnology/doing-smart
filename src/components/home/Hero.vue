@@ -17,7 +17,9 @@ import bg from "@/assets/bg1.jpg";
       >
         <span class="text-smart-blue"> Doing Smart</span> Agence numérique
       </h1>
-      <h6 class="font-medium text-white text-xl lg:text-3xl mt-14">
+      <h6
+        class="font-medium text-white text-center px-2 text-xl lg:text-3xl mt-14"
+      >
         Prennez en main votre processus de digitalisation
       </h6>
       <router-link
