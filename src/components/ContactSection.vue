@@ -5,10 +5,8 @@ import {
   MapPinIcon,
   PhoneIcon,
   UserIcon,
-  PhoneArrowUpRightIcon,
   PencilIcon,
 } from "@heroicons/vue/24/outline";
-import { HomeIcon } from "@heroicons/vue/24/outline";
 </script>
 <template>
   <div

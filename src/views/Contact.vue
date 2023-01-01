@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import Banner from "@/components/Banner.vue";
 import Link from "../types/Link";
-import { HomeIcon } from "@heroicons/vue/24/outline";
 import {
   UserIcon,
   EnvelopeIcon,
   PhoneIcon,
-  PhoneArrowUpRightIcon,
+  MapPinIcon,
   PencilIcon,
-} from "@heroicons/vue/24/outline";
+  ClockIcon,
+} from "@heroicons/vue/24/solid";
 const links: Array<Link> = [
   {
     label: "Contact",
@@ -19,168 +19,225 @@ const links: Array<Link> = [
 
 <template>
   <Banner :links="links" :title="'Contactez nous'" />
-  <div class="bg-gray-50 w-full py-12 lg:px-32 px-4">
-    <div class="w-full lg:flex">
-      <div class="lg:w-1/2 px-6">
-        <div
-          class="h-60 lg:h-1/2 bg-gray-100 rounded-xl flex items-center justify-center"
-        >
-          <iframe
-            class="w-full h-full"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1614.0037904658373!2d9.74186621096476!3d4.043597282872684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scm!4v1668340031208!5m2!1sen!2scm"
-            style="border: 0"
-            allowfullscreen="true"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+  <div class="bg-gray-100 w-full">
+    <div
+      class="py-10 lg:pb-20 xl:px-36 md:px-10 px-4 flex flex-col justify-center items-center"
+    >
+      <div
+        class="rounded-full shadow bg-white px-6 py-2 text-gray-500 uppercase font-medium text-xs sm:text-sm inline-block"
+      >
+        Informations de contact
+      </div>
+      <div class="mt-6">
+        <h1 class="font-bold lg:text-5xl text-4xl">
+          <span class="text-smart-blue">Contacter</span> & S'unir
+        </h1>
+      </div>
+      <p class="mt-6 text-center max-w-lg text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi
+        esse ad, molestias ipsam temporibus
+      </p>
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mt-8">
+        <div class="bg-white shadow-xl rounded-3xl p-4">
+          <div class="flex items-start space-x-3">
+            <div>
+              <MapPinIcon class="w-10 h-10 text-gray-900" />
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 text-sm">Localisation...</h3>
+              <h1 class="font-bold text-smart-blue text-xl">
+                Rendez-nous visite
+              </h1>
+              <p class="text-gray-500 md:text-left text-sm text-center mt-2">
+                Ndokoti, Base Ketch
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="mt-6 flex flex-col items-start justify-start space-y-4">
-          <a
-            href="#"
-            class="flex justify-center items-center space-x-2 hover:underline font-semibold"
-          >
-            <div
-              class="p-2 rounded-lg border-2 border-smart-blue text-smart-blue flex justify-center items-center"
-            >
-              <EnvelopeIcon class="h-6 w-6" />
+        <div class="bg-white shadow-xl rounded-3xl p-4">
+          <div class="flex items-start space-x-3">
+            <div><PhoneIcon class="w-10 h-10 text-gray-900" /></div>
+            <div>
+              <h3 class="font-bold text-gray-900 text-sm">24*7 Service...</h3>
+              <h1 class="font-bold text-smart-blue text-xl">Appelez-nous</h1>
+              <p class="text-gray-500 md:text-left text-sm text-center mt-2">
+                +237 657 52 58 12
+              </p>
             </div>
-            <div class="text-sm">contactdoingsmart@gmail.com</div>
-          </a>
-          <a
-            href="#"
-            class="flex justify-center items-center space-x-2 hover:underline font-semibold"
-          >
-            <div
-              class="p-2 rounded-lg border-2 border-smart-blue text-smart-blue flex justify-center items-center"
-            >
-              <HomeIcon class="h-6 w-6" />
+          </div>
+        </div>
+        <div class="bg-white shadow-xl rounded-3xl p-4">
+          <div class="flex items-start space-x-3">
+            <div><EnvelopeIcon class="w-10 h-10 text-gray-900" /></div>
+            <div>
+              <h3 class="font-bold text-gray-900 text-sm">
+                Laissez un message...
+              </h3>
+              <h1 class="font-bold text-smart-blue text-xl">Adresse mail</h1>
+              <p class="text-gray-500 md:text-left text-sm text-center mt-2">
+                contactdoingsmart@gmail.com
+              </p>
             </div>
-            <div class="text-sm">Douala, Ndokotti Base Ketch</div>
-          </a>
-          <a
-            href="#"
-            class="flex justify-center items-center space-x-2 hover:underline font-semibold"
-          >
-            <div
-              class="p-2 rounded-lg border-2 border-smart-blue text-smart-blue flex justify-center items-center"
-            >
-              <svg
-                class="h-6 w-6"
-                viewBox="0 0 40 40"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0 20.1117C0 30.055 7.22167 38.3233 16.6667 40V25.555H11.6667V20H16.6667V15.555C16.6667 10.555 19.8883 7.77833 24.445 7.77833C25.8883 7.77833 27.445 8 28.8883 8.22167V13.3333H26.3333C23.8883 13.3333 23.3333 14.555 23.3333 16.1117V20H28.6667L27.7783 25.555H23.3333V40C32.7783 38.3233 40 30.0567 40 20.1117C40 9.05 31 0 20 0C9 0 0 9.05 0 20.1117Z"
-                  fill="currentColor"
-                />
-              </svg>
+          </div>
+        </div>
+        <div class="bg-white shadow-xl rounded-3xl p-4">
+          <div class="flex items-start space-x-3">
+            <div><ClockIcon class="w-10 h-10 text-gray-900" /></div>
+            <div>
+              <h3 class="font-bold text-gray-900 text-sm">
+                Heures de Travail...
+              </h3>
+              <h1 class="font-bold text-smart-blue text-xl">
+                Horaire d'ouverture
+              </h1>
+              <p class="text-gray-500 md:text-left text-sm text-center mt-2">
+                Lun – Ven : 09h – 18h
+              </p>
             </div>
-            <div class="text-sm">Doing Smart</div>
-          </a>
-          <a
-            href="#"
-            class="flex justify-center items-center space-x-2 hover:underline font-semibold"
-          >
-            <div
-              class="p-2 rounded-lg border-2 border-smart-blue text-smart-blue flex justify-center items-center"
-            >
-              <svg
-                class="h-6 w-6"
-                viewBox="0 0 36 36"
-                fill="#000000"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M30.4008 5.58602C28.7829 3.96732 26.8608 2.68462 24.7451 1.81176C22.6295 0.938901 20.3621 0.49312 18.0734 0.50008C8.46875 0.50008 0.65 8.27977 0.646094 17.8438C0.641845 20.8892 1.44461 23.8814 2.97266 26.5157L0.5 35.5001L9.73828 33.0884C12.2955 34.4737 15.1581 35.1987 18.0664 35.1977H18.0734C27.6773 35.1977 35.4953 27.4173 35.5 17.854C35.5058 15.5732 35.058 13.314 34.1826 11.2078C33.3071 9.10171 32.0216 7.19071 30.4008 5.58602ZM18.0734 32.2704H18.0672C15.4745 32.2712 12.929 31.5773 10.6953 30.261L10.1664 29.9485L4.68437 31.3798L6.14766 26.0602L5.80312 25.5134C4.35343 23.2182 3.58535 20.5585 3.58828 17.8438C3.58828 9.89617 10.0891 3.42977 18.0789 3.42977C21.9117 3.42292 25.5903 4.93878 28.3055 7.64392C31.0208 10.3491 32.5504 14.022 32.5578 17.8548C32.5547 25.8032 26.057 32.2704 18.0734 32.2704ZM26.018 21.4743C25.5828 21.2571 23.4398 20.2087 23.043 20.0641C22.6461 19.9196 22.3531 19.847 22.0633 20.2813C21.7734 20.7157 20.9383 21.6876 20.6844 21.9806C20.4305 22.2735 20.1766 22.3055 19.7414 22.0884C19.3063 21.8712 17.9023 21.4141 16.2391 19.9376C14.9445 18.7884 14.0711 17.3696 13.8172 16.936C13.5633 16.5024 13.7898 16.2673 14.0078 16.0516C14.2039 15.8571 14.443 15.5454 14.6609 15.2923C14.8789 15.0391 14.9516 14.8579 15.0961 14.5688C15.2406 14.2798 15.1687 14.0266 15.0602 13.8102C14.9516 13.5938 14.0805 11.4602 13.718 10.5923C13.3641 9.74695 13.0055 9.8618 12.7383 9.84852C12.4844 9.83602 12.1914 9.83289 11.9031 9.83289C11.6827 9.83863 11.4659 9.88974 11.2662 9.98302C11.0664 10.0763 10.888 10.2098 10.7422 10.3751C10.343 10.8095 9.21797 11.8595 9.21797 13.9907C9.21797 16.122 10.7805 18.1845 10.9961 18.4735C11.2117 18.7626 14.0664 23.1399 18.4344 25.0173C19.2455 25.3646 20.0742 25.6692 20.9172 25.9298C21.9602 26.2595 22.9094 26.2134 23.6594 26.1016C24.4961 25.9774 26.2375 25.0532 26.5992 24.0407C26.9609 23.0282 26.9617 22.161 26.8531 21.9806C26.7445 21.8001 26.4539 21.6907 26.018 21.4743Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-            <div
-              class="p-2 rounded-lg border-2 border-smart-blue text-smart-blue flex justify-center items-center"
-            >
-              <PhoneArrowUpRightIcon class="h-6 w-6" />
-            </div>
-            <div class="text-sm">237 6 58 40 11 81</div>
-          </a>
+          </div>
         </div>
       </div>
-      <div class="lg:w-1/2 px-6 lg:mt-0 mt-6">
-        <form class="w-full">
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label for="name" class="text-sm font-semibold">Nom</label>
-              <div class="relative mt-2">
-                <UserIcon
-                  class="h-7 w-7 text-smart-blue absolute top-3.5 left-3"
-                />
-                <input
-                  type="text"
-                  placeholder="Nom"
-                  id="name"
-                  class="py-4 text-sm px-2 rounded-xl bg-white w-full pl-12 focus:outline-none focus:border focus:border-white focus:ring focus:ring-custom-yellow/80"
-                />
-              </div>
-            </div>
-            <div>
-              <label for="email" class="text-sm font-semibold">E-mail</label>
-              <div class="relative mt-2">
-                <EnvelopeIcon
-                  class="h-7 w-7 text-smart-blue absolute top-3.5 left-3"
-                />
-                <input
-                  type="email"
-                  placeholder="E-mail"
-                  id="email"
-                  class="py-4 text-sm px-2 rounded-xl bg-white w-full pl-12 focus:outline-none focus:border focus:border-white focus:ring focus:ring-custom-yellow/80"
-                />
-              </div>
-            </div>
-            <div class="col-span-2">
-              <label for="phone" class="text-sm font-semibold">Téléphone</label>
-              <div class="relative mt-2">
-                <PhoneIcon
-                  class="h-7 w-7 text-smart-blue absolute top-3.5 left-3"
-                />
-                <input
-                  type="text"
-                  id="phone"
-                  placeholder="Téléphone"
-                  class="py-4 text-sm pr-2 rounded-xl bg-white w-full pl-12 focus:outline-none focus:border focus:border-white focus:ring focus:ring-custom-yellow/80"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="mt-6">
-            <label for="message" class="text-sm font-semibold"
-              >Comment Pouvons-nous Vous Aider?</label
-            >
-            <div class="relative mt-2">
-              <PencilIcon
-                class="h-7 w-7 text-smart-blue absolute top-3.5 left-3"
+    </div>
+    <div class="xl:min-h-screen bg-white bg-no-repeat w-full overflow-hidden">
+      <div
+        class="w-full h-full lg:pt-10 py-10 lg:pb-20 xl:px-36 md:px-10 px-4 flex xl:flex-row flex-col xl:justify-start xl:items-start justify-center items-center"
+      >
+        <div class="xl:w-1/4 w-full h-full">
+          <div
+            class="w-full rounded-3xl flex flex-col justify-center items-center px-6 py-10 text-white bg-smart-blue"
+          >
+            <div class="h-20 w-20 rounded-full p-2 bg-white">
+              <img
+                src="@/assets/online_support_blue.png"
+                class="h-full w-full object-cover"
+                alt=""
               />
-              <textarea
-                name="message"
-                id="message"
-                class="py-4 text-sm rounded-xl pr-2 w-full h-52 pl-12 focus:outline-none focus:border focus:border-white focus:ring focus:ring-custom-yellow/80"
-              ></textarea>
             </div>
-          </div>
-          <div class="mt-10">
+            <h1 class="font-bold mt-4 text-xl">Chat With Live !</h1>
+            <p class="text-sm text-center mt-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque illum ipsum iusto
+            </p>
             <button
               type="button"
-              class="bg-custom-yellow py-4 px-6 w-full border border-smart-blue hover:bg-transparent transition-colors hover:text-smart-blue rounded-xl"
+              class="rounded-full shadow hover:shadow-lg bg-white hover:bg-smart-blue-2 px-4 py-3 mt-6 text-smart-blue hover:text-white uppercase font-medium text-xs sm:text-sm inline-block"
             >
-              Envoyer
+              let's chat
             </button>
           </div>
-        </form>
+        </div>
+        <div
+          class="xl:w-3/4 w-full z-10 flex lg:justify-end lg:flex-row flex-col justify-center relative"
+        >
+          <img
+            src="@/assets/img28.png"
+            class="object-cover justify-center lg:h-full mx-auto sm:w-auto w-60 bg-transparent left-0 lg:absolute z-10"
+            alt=""
+          />
+
+          <div
+            class="lg:w-1/2 w-full h-auto bg-white p-4 rounded-3xl shadow-xl sm:p-6"
+          >
+            <div
+              class="rounded-full shadow bg-white px-4 py-2 inline-flex items-center space-x-3 mx-auto text-gray-500 uppercase font-medium text-xs sm:text-sm"
+            >
+              <div class="w-2 h-2 bg-smart-blue rounded-full"></div>
+              <h1>Nous contacter</h1>
+              <div class="w-2 h-2 bg-smart-blue rounded-full"></div>
+            </div>
+            <div class="my-6">
+              <h1 class="font-bold text-5xl text-left">
+                <span class="text-smart-blue">Contacter</span> & S'unir
+              </h1>
+            </div>
+            <form>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="text-sm font-semibold">Nom</label>
+                  <div class="relative mt-2">
+                    <UserIcon
+                      class="h-7 w-7 text-smart-blue absolute top-3.5 left-3"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Nom"
+                      id="name"
+                      class="py-4 text-sm px-2 rounded-full bg-white w-full pl-12 focus:outline-none border focus:border-white focus:ring focus:ring-custom-yellow/80"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="email" class="text-sm font-semibold"
+                    >E-mail</label
+                  >
+                  <div class="relative mt-2">
+                    <EnvelopeIcon
+                      class="h-7 w-7 text-smart-blue absolute top-3.5 left-3"
+                    />
+                    <input
+                      type="email"
+                      placeholder="E-mail"
+                      id="email"
+                      class="py-4 text-sm px-2 rounded-full bg-white w-full pl-12 focus:outline-none border focus:border-white focus:ring focus:ring-custom-yellow/80"
+                    />
+                  </div>
+                </div>
+                <div class="col-span-2">
+                  <label for="phone" class="text-sm font-semibold"
+                    >Téléphone</label
+                  >
+                  <div class="relative mt-2">
+                    <PhoneIcon
+                      class="h-7 w-7 text-smart-blue absolute top-3.5 left-3"
+                    />
+                    <input
+                      type="text"
+                      id="phone"
+                      placeholder="Téléphone"
+                      class="py-4 text-sm pr-2 rounded-full bg-white w-full pl-12 focus:outline-none border focus:border-white focus:ring focus:ring-custom-yellow/80"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6">
+                <label for="message" class="text-sm font-semibold"
+                  >Comment Pouvons-nous Vous Aider?</label
+                >
+                <div class="relative mt-2">
+                  <PencilIcon
+                    class="h-7 w-7 text-smart-blue absolute top-3.5 left-3"
+                  />
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="py-4 text-sm rounded-3xl pr-2 w-full h-52 pl-12 focus:outline-none border focus:border-white focus:ring focus:ring-custom-yellow/80"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="mt-10">
+                <button
+                  type="button"
+                  class="bg-smart-blue py-4 px-6 w-full border text-white border-smart-blue hover:bg-transparent transition-colors hover:text-smart-blue rounded-full"
+                >
+                  Envoyer
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+    </div>
+    <div
+      class="h-60 w-full sm:h-96 bg-gray-100 rounded-xl flex items-center justify-center"
+    >
+      <iframe
+        class="w-full h-full"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1614.0037904658373!2d9.74186621096476!3d4.043597282872684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scm!4v1668340031208!5m2!1sen!2scm"
+        style="border: 0"
+        allowfullscreen="true"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   </div>
 </template>

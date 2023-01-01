@@ -60,6 +60,19 @@ const routes: Array<RouteRecordRaw> = [
       title: "Agence de marketing digital - Contact | " + websiteName,
     },
   },
+
+  {
+    path: "/:pathMatch(.*)*",
+    name: "not-found",
+    components: {
+      default: () => import("@/views/NotFound.vue"),
+      navbar: NavBar,
+      footer: Footer,
+    },
+    meta: {
+      title: "Agence de marketing digital - Page introuvable | " + websiteName,
+    },
+  },
 ];
 
 const router = createRouter({
