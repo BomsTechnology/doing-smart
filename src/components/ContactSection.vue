@@ -26,7 +26,7 @@ import {
           <div class="w-2 h-2 bg-smart-blue rounded-full"></div>
         </div>
         <div class="mt-6">
-          <h1 class="font-bold text-5xl text-left">
+          <h1 class="font-bold lg:text-5xl text-4xl text-left">
             <span class="text-smart-blue">Contacter</span> & S'unir
           </h1>
         </div>

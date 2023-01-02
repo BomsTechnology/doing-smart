@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
       default: () => import("@/views/Start.vue"),
     },
     meta: {
-      title: "Agence de marketing digital - Accueil | " + websiteName,
+      title: "Agence de marketing digital | " + websiteName,
     },
   },
   {
@@ -32,11 +32,11 @@ const routes: Array<RouteRecordRaw> = [
       footer: Footer,
     },
     meta: {
-      title: "Agence de marketing digital - Accueil | " + websiteName,
+      title: "Accueil - Agence de marketing digital | " + websiteName,
     },
   },
   {
-    path: "/service",
+    path: "/services",
     name: "service",
     components: {
       default: () => import("@/views/Service.vue"),
@@ -44,7 +44,7 @@ const routes: Array<RouteRecordRaw> = [
       footer: Footer,
     },
     meta: {
-      title: "Agence de marketing digital - Services | " + websiteName,
+      title: "Services - Agence de marketing digital | " + websiteName,
     },
   },
 
@@ -57,7 +57,20 @@ const routes: Array<RouteRecordRaw> = [
       footer: Footer,
     },
     meta: {
-      title: "Agence de marketing digital - Contact | " + websiteName,
+      title: "Contact - Agence de marketing digital | " + websiteName,
+    },
+  },
+
+  {
+    path: "/about-us",
+    name: "about-us",
+    components: {
+      default: () => import("@/views/AboutUs.vue"),
+      navbar: NavBar,
+      footer: Footer,
+    },
+    meta: {
+      title: "A Propos de nous - Agence de marketing digital | " + websiteName,
     },
   },
 

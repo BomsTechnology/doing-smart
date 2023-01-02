@@ -25,8 +25,8 @@ const show = ref(1);
         </div>
       </div>
       <div class="mt-6">
-        <h1 class="font-bold text-5xl text-center">
-          <span class="text-smart-blue">Formations</span> Certifiantes
+        <h1 class="font-bold lg:text-5xl text-4xl text-center">
+          <span class="text-smart-blue">Formations</span>
         </h1>
       </div>
       <div

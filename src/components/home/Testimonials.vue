@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import bg from "@/assets/bg2.png";
 import Testimonial from "@/components/Testimonial.vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css/navigation";
+import "swiper/css";
+import { Autoplay, Navigation } from "swiper";
+const modules = [Autoplay, Navigation];
 </script>
 <template>
   <div
@@ -31,11 +36,35 @@ import Testimonial from "@/components/Testimonial.vue";
           illum assumenda laborum
         </p>
       </div>
-      <div
-        class="grid w-full lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-6 mt-10 sm:mt-20"
+      <swiper
+        :navigation="true"
+        :autoplay="{
+          delay: 5000,
+          disableOnInteraction: false,
+        }"
+        :slidesPerView="3"
+        :spaceBetween="5"
+        :breakpoints="{
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        }"
+        class="mt-10 sm:mt-20 !p-8"
+        :modules="modules"
       >
-        <Testimonial />
-      </div>
+        <swiper-slide v-for="i in 5" :key="i">
+          <Testimonial />
+        </swiper-slide>
+      </swiper>
     </div>
   </div>
 </template>

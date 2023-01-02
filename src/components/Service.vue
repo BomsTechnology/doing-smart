@@ -15,7 +15,7 @@ import { PresentationChartBarIcon } from "@heroicons/vue/24/solid";
         <PresentationChartBarIcon class="w-16 h-16 text-smart-blue" />
       </span>
       <h1
-        class="group-hover:text-white sm:text-gray-900 text-white transition-all duration-500 mt-8 text-2xl font-bold text-center"
+        class="group-hover:text-white sm:text-gray-900 text-white w-3/4 transition-all duration-500 mt-8 text-2xl font-bold text-center"
       >
         Community Management
       </h1>

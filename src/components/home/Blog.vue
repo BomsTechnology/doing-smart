@@ -14,7 +14,7 @@ import Article from "../Article.vue";
       </div>
     </div>
     <div class="mt-6">
-      <h1 class="font-bold text-5xl text-center">
+      <h1 class="font-bold lg:text-5xl text-4xl text-center">
         <span class="text-smart-blue">Blog</span> & Nouvelles
       </h1>
     </div>

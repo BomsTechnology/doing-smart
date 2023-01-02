@@ -131,6 +131,7 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/vue/24/outline";
         <div>
           <h1 class="font-bold text-xl sm:text-2xl">Soutien</h1>
           <ul class="mt-4 space-y-2 text-sm">
+            <li>Contact</li>
             <li>FAQ</li>
           </ul>
         </div>

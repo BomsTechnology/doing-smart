@@ -46,12 +46,12 @@ import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";
               >
             </li>
           </ul>
-          <button
-            type="button"
+          <router-link
+            :to="{ name: 'service' }"
             class="rounded-full shadow hover:shadow-lg bg-smart-blue hover:bg-smart-blue-2 px-4 py-3 mt-6 text-white uppercase font-medium text-xs sm:text-sm inline-block"
           >
             Plus de services
-          </button>
+          </router-link>
         </div>
       </div>
       <div

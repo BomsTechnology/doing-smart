@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import {
-  UserGroupIcon,
-  AcademicCapIcon,
-  GlobeEuropeAfricaIcon,
-  CheckCircleIcon,
-} from "@heroicons/vue/24/solid";
+import bg from "@/assets/bg4.png";
 import Banner from "@/components/Banner.vue";
 import Link from "../types/Link";
+import Service from "@/components/Service.vue";
+import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";
 const links: Array<Link> = [
   {
     label: "Services",
@@ -17,91 +14,132 @@ const links: Array<Link> = [
 
 <template>
   <Banner :links="links" :title="'Nos Services'" />
-  <div class="w-full py-10 xl:px-48 px-10 relative">
-    <img
-      src="@/assets/star2.png"
-      class="absolute top-10 right-10 lg:h-60 h-28 opacity-70"
-      alt=""
-    />
-    <img
-      src="@/assets/star.png"
-      class="absolute bottom-0 left-0 lg:h-60 h-28 opacity-70"
-      alt=""
-    />
-
-    <div class="grid gap-6 lg:grid-cols-3 grid-cols-1 mt-10">
+  <div>
+    <div class="bg-gray-100 sm:py-32 py-10 xl:px-36 px-6 md:px-10">
+      <div class="w-full grid-cols-1 grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+        <Service />
+      </div>
+    </div>
+    <div class="px-4 w-full">
       <div
-        class="h-96 bg-[#193334] rounded-md shadow-xl z-10 text-white py-4 px-2"
+        class="max-w-6xl rounded-2xl bg-smart-blue lg:h-40 text-white p-8 mx-auto sm:-mt-20 flex lg:flex-row flex-col justify-center items-center"
       >
-        <div
-          class="flex flex-col space-y-4 justify-center items-center py-4 px-2 h-1/2"
-        >
-          <GlobeEuropeAfricaIcon class="md:h-16 md:w-16 w-12 h-12" />
-          <h1 class="text-xl font-bold md:text-2xl">Placement de personnel</h1>
+        <div class="lg:flex items-center justify-center">
+          <div
+            class="flex items-center lg:justify-start justify-center lg:flex-row flex-col space-x-6 lg:border-r lg:border-b-0 border-b lg:pb-0 pb-6 border-white w-full pr-4"
+          >
+            <div class="border border-white inline-block p-4 rounded-full">
+              <PhoneArrowUpRightIcon class="w-8 h-8" />
+            </div>
+            <div class="lg:text-left text-center">
+              <h1 class="text-xl">Contactez-nous</h1>
+              <p class="text-4xl font-bold">987 233 0000</p>
+            </div>
+          </div>
+          <p class="lg:p-4 p-4 lg:text-left text-center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+            inventore eaque maxime. Suscipit dignissimos cum molestiae,
+          </p>
         </div>
-        <div class="h-1/2">
-          <ul class="text-sm space-y-4 px-8">
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="h-5 w-5 text-gray-500" />
-              <span
-                >Placement des Community Manager au sein des entreprises</span
-              >
-            </li>
-          </ul>
+        <div class="lg:w-1/3 w-full flex justify-center lg:p-0 p-4">
+          <button
+            type="button"
+            class="bg-white px-6 py-2 uppercase font-medium rounded-full text-smart-blue hover:bg-smart-blue-2 hover:text-white transition-colors"
+          >
+            prennez rendez-vous
+          </button>
         </div>
       </div>
+    </div>
+    <div class="min-h-screen">
       <div
-        class="h-96 bg-smart-blue rounded-md shadow-xl z-10 text-white py-4 px-2"
+        class="py-10 xl:px-36 px-6 md:px-10 w-full flex flex-col justify-center items-center"
       >
         <div
-          class="flex flex-col space-y-4 justify-center items-center py-4 px-2 h-1/2"
+          class="rounded-full shadow bg-white px-6 py-2 text-gray-500 uppercase font-medium text-xs sm:text-sm inline-block"
         >
-          <AcademicCapIcon class="md:h-16 md:w-16 w-12 h-12" />
-          <h1 class="text-xl font-bold md:text-2xl">Formations</h1>
+          Notre processus
         </div>
-        <div class="h-1/2">
-          <ul class="text-sm space-y-4 px-8">
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
-              <span>Formation en Community Management</span>
-            </li>
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="h-5 w-5 text-[#193334]" />
-              <span>Formation Conception Graphique</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="h-96 bg-gray-500 rounded-md shadow-xl z-10 text-white py-4 px-2"
-      >
-        <div
-          class="flex flex-col space-y-4 justify-center items-center py-4 px-2 h-1/2"
-        >
-          <UserGroupIcon class="md:h-16 md:w-16 w-12 h-12" />
-          <h1 class="text-xl font-bold md:text-2xl text-center">
-            Accompagnement d'entreprise
+        <div class="mt-6">
+          <h1 class="font-bold lg:text-5xl text-4xl">
+            <span class="text-smart-blue">Processus</span> a Suivre
           </h1>
         </div>
-        <div class="h-1/2">
-          <ul class="text-sm space-y-4 px-8">
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="h-5 w-5 text-smart-blue" />
-              <span>Création Stratégie Marketing digitale</span>
-            </li>
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="h-5 w-5 text-smart-blue" />
-              <span>Gestion des réseaux sociaux</span>
-            </li>
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="h-5 w-5 text-smart-blue" />
-              <span>Consultation et audit Marketing</span>
-            </li>
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="h-5 w-5 text-smart-blue" />
-              <span>Création identité visuel</span>
-            </li>
-          </ul>
+        <p class="mt-6 text-center max-w-lg text-gray-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi
+          esse ad, molestias ipsam temporibus
+        </p>
+      </div>
+      <div
+        class="bg-no-repeat bg-center sm:pb-32 pb-10 pt-10 xl:px-36 px-6 md:px-10 w-full overflow-hidden grid-cols-1 grid lg:grid-cols-3 md:grid-cols-2 gap-10"
+        :style="`background-image: url(${bg})`"
+      >
+        <div>
+          <div
+            class="bg-white h-80 w-80 rounded-full shadow-lg p-4 relative mx-auto"
+          >
+            <div
+              class="h-10 w-10 rounded-full bg-smart-blue flex justify-center items-center absolute top-5 right-10 p-8"
+            >
+              <span class="text-white font-black text-3xl">01 </span>
+            </div>
+            <div
+              class="border-gray-200 rounded-full h-full w-full border-4 transition-all duration-500 hover:border-smart-blue flex justify-center items-center flex-col text-center"
+            >
+              <h1 class="text-xl font-bold">Projet de recherche</h1>
+              <p class="mt-4 text-sm px-8 text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem alias labore modi cum architecto consectetur
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bg-white h-80 w-80 rounded-full shadow-lg p-4 relative mx-auto"
+          >
+            <div
+              class="h-10 w-10 rounded-full bg-smart-blue flex justify-center items-center absolute top-5 right-10 p-8"
+            >
+              <span class="text-white font-black text-3xl">02</span>
+            </div>
+            <div
+              class="border-gray-200 rounded-full h-full w-full border-4 transition-all duration-500 hover:border-smart-blue flex justify-center items-center flex-col text-center"
+            >
+              <h1 class="text-xl font-bold">Evaluer les plans</h1>
+              <p class="mt-4 text-sm px-8 text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem alias labore modi cum architecto consectetur
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="bg-white h-80 w-80 rounded-full shadow-lg p-4 relative mx-auto"
+          >
+            <div
+              class="h-10 w-10 rounded-full bg-smart-blue flex justify-center items-center absolute top-5 right-10 p-8"
+            >
+              <span class="text-white font-black text-3xl">03</span>
+            </div>
+            <div
+              class="border-gray-200 rounded-full h-full w-full border-4 transition-all duration-500 hover:border-smart-blue flex justify-center items-center flex-col text-center"
+            >
+              <h1 class="text-xl font-bold">Meilleurs résultats</h1>
+              <p class="mt-4 text-sm px-8 text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem alias labore modi cum architecto consectetur
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

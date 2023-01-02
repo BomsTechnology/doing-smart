@@ -39,25 +39,29 @@ const links: Array<Link> = [
       </p>
       <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mt-8">
         <div class="bg-white shadow-xl rounded-3xl p-4">
-          <div class="flex items-start space-x-3">
+          <div
+            class="flex lg:flex-row flex-col lg:items-start lg:justify-start justify-center items-center lg:space-x-3 space-x-0 lg:space-y-0 space-y-3"
+          >
             <div>
-              <MapPinIcon class="w-10 h-10 text-gray-900" />
+              <MapPinIcon class="lg:w-10 lg:h-10 h-12 w-12 text-gray-900" />
             </div>
-            <div>
+            <div class="lg:text-left text-center">
               <h3 class="font-bold text-gray-900 text-sm">Localisation...</h3>
               <h1 class="font-bold text-smart-blue text-xl">
                 Rendez-nous visite
               </h1>
-              <p class="text-gray-500 md:text-left text-sm text-center mt-2">
-                Ndokoti, Base Ketch
-              </p>
+              <p class="text-gray-500 text-sm mt-2">Ndokoti, Base Ketch</p>
             </div>
           </div>
         </div>
         <div class="bg-white shadow-xl rounded-3xl p-4">
-          <div class="flex items-start space-x-3">
-            <div><PhoneIcon class="w-10 h-10 text-gray-900" /></div>
+          <div
+            class="flex lg:flex-row flex-col lg:items-start lg:justify-start justify-center items-center lg:space-x-3 space-x-0 lg:space-y-0 space-y-3"
+          >
             <div>
+              <PhoneIcon class="lg:w-10 lg:h-10 h-12 w-12 text-gray-900" />
+            </div>
+            <div class="lg:text-left text-center">
               <h3 class="font-bold text-gray-900 text-sm">24*7 Service...</h3>
               <h1 class="font-bold text-smart-blue text-xl">Appelez-nous</h1>
               <p class="text-gray-500 md:text-left text-sm text-center mt-2">
@@ -67,9 +71,13 @@ const links: Array<Link> = [
           </div>
         </div>
         <div class="bg-white shadow-xl rounded-3xl p-4">
-          <div class="flex items-start space-x-3">
-            <div><EnvelopeIcon class="w-10 h-10 text-gray-900" /></div>
+          <div
+            class="flex lg:flex-row flex-col lg:items-start lg:justify-start justify-center items-center lg:space-x-3 space-x-0 lg:space-y-0 space-y-3"
+          >
             <div>
+              <EnvelopeIcon class="lg:w-10 lg:h-10 h-12 w-12 text-gray-900" />
+            </div>
+            <div class="lg:text-left text-center">
               <h3 class="font-bold text-gray-900 text-sm">
                 Laissez un message...
               </h3>
@@ -81,9 +89,13 @@ const links: Array<Link> = [
           </div>
         </div>
         <div class="bg-white shadow-xl rounded-3xl p-4">
-          <div class="flex items-start space-x-3">
-            <div><ClockIcon class="w-10 h-10 text-gray-900" /></div>
+          <div
+            class="flex lg:flex-row flex-col lg:items-start lg:justify-start justify-center items-center lg:space-x-3 space-x-0 lg:space-y-0 space-y-3"
+          >
             <div>
+              <ClockIcon class="lg:w-10 lg:h-10 h-12 w-12 text-gray-900" />
+            </div>
+            <div class="lg:text-left text-center">
               <h3 class="font-bold text-gray-900 text-sm">
                 Heures de Travail...
               </h3>
@@ -146,7 +158,7 @@ const links: Array<Link> = [
               <div class="w-2 h-2 bg-smart-blue rounded-full"></div>
             </div>
             <div class="my-6">
-              <h1 class="font-bold text-5xl text-left">
+              <h1 class="font-bold lg:text-5xl text-4xl text-left">
                 <span class="text-smart-blue">Contacter</span> & S'unir
               </h1>
             </div>

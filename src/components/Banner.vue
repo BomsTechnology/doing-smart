@@ -14,7 +14,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="w-full lg:h-80 h-60 bg-cover"
+    class="w-full lg:h-80 h-64 bg-cover"
     :style="{ 'background-image': `url(${bg})` }"
   >
     <div

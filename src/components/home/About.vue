@@ -6,7 +6,8 @@ import { CheckCircleIcon, PlayCircleIcon } from "@heroicons/vue/24/solid";
     class="bg-white py-10 sm:py-32 flex lg:flex-row flex-col-reverse items-center lg:space-x-12 xl:px-48 px-6 md:px-10"
   >
     <div class="relative lg:w-1/2 lg:mt-0 mt-4 w-full h-[500px]">
-      <div
+      <a
+        href="#"
         class="h-60 w-60 absolute z-20 p-2 left-5 top-5 bg-white rounded-full overflow-hidden"
       >
         <img
@@ -25,7 +26,7 @@ import { CheckCircleIcon, PlayCircleIcon } from "@heroicons/vue/24/solid";
             class="relative inline-flex h-16 w-16 text-smart-blue"
           />
         </div>
-      </div>
+      </a>
       <div
         class="h-[90%] w-2/3 absolute z-0 p-2 right-0 top-0 bg-white rounded-3xl overflow-hidden"
       >
