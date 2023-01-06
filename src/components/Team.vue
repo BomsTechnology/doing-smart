@@ -1,21 +1,32 @@
+<script setup lang="ts">
+import { UserIcon } from "@heroicons/vue/24/solid";
+import Team from "../types/Team";
+const props = defineProps<{
+  data: Team;
+}>();
+</script>
+
 <template>
   <div class="bg-white shadow h-96 rounded-2xl">
     <div class="w-full h-3/4 relative">
       <img
-        src="@/assets/img9.jpg"
+        v-if="data.image"
+        :src="data.image"
         class="w-full h-full object-cover rounded-t-2xl"
         alt=""
       />
+      <UserIcon v-else class="w-full h-full text-gray-300 rounded-t-2xl" />
       <div class="px-6 w-full absolute -bottom-10">
         <div class="bg-smart-blue text-white rounded-3xl z-10 p-3 text-center">
-          <h1 class="font-bold text-2xl">Harry Warth</h1>
-          <h3 class="font-medium">PDG, Directeur</h3>
+          <h1 class="font-bold text-2xl">{{ data.name }}</h1>
+          <h3 class="font-medium">{{ data.post }}</h3>
         </div>
       </div>
     </div>
     <div class="flex mt-12 justify-center space-x-4 items-center">
       <a
-        href="#"
+        :href="data.facebook"
+        target="_blank"
         class="flex justify-center items-center border rounded-full p-2 group hover:bg-smart-blue transition-colors duration-700"
       >
         <svg
@@ -33,7 +44,8 @@
         </svg>
       </a>
       <a
-        href="#"
+        :href="data.youtube"
+        target="_blank"
         class="flex justify-center items-center border rounded-full p-2 group hover:bg-smart-blue transition-colors duration-700"
       >
         <svg
@@ -49,7 +61,8 @@
         </svg>
       </a>
       <a
-        href="#"
+        :href="data.twitter"
+        target="_blank"
         class="flex justify-center items-center border rounded-full p-2 group hover:bg-smart-blue transition-colors duration-700"
       >
         <svg
@@ -65,7 +78,8 @@
         </svg>
       </a>
       <a
-        href="#"
+        :href="data.instagram"
+        target="_blank"
         class="flex justify-center items-center border rounded-full p-2 group hover:bg-smart-blue transition-colors duration-700"
       >
         <svg

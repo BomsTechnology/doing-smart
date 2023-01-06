@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Hero from "@/components/home/Hero.vue";
-import Teams from "@/components/home/Teams.vue";
+// import Teams from "@/components/home/Teams.vue";
 import Services from "@/components/home/Services.vue";
 import Portfolio from "@/components/home/Portfolio.vue";
 import Training from "@/components/home/Training.vue";
@@ -19,7 +19,7 @@ import Testimonials from "@/components/home/Testimonials.vue";
   <Mission />
   <Portfolio />
   <Training />
-  <Teams />
+
   <Testimonials />
   <Highlight />
   <Subscribe />

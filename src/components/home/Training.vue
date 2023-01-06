@@ -3,6 +3,7 @@ import bg from "@/assets/training2.jpg";
 import CommunityManger from "../training/CommunityManger.vue";
 import PubFacebook from "../training/PubFacebook.vue";
 import Design from "../training/Design.vue";
+import Website from "../training/Website.vue";
 import { ref } from "vue";
 
 const show = ref(1);
@@ -13,7 +14,7 @@ const show = ref(1);
     class="w-full bg-no-repeat bg-cover bg-fixed"
   >
     <div
-      class="bg-white/50 w-full lg:py-20 py-10 xl:px-36 md:px-10 px-4 relative text-black"
+      class="bg-white/90 w-full lg:py-20 py-10 xl:px-36 md:px-10 px-4 relative text-black"
     >
       <div class="w-full flex justify-center">
         <div
@@ -29,6 +30,10 @@ const show = ref(1);
           <span class="text-smart-blue">Formations</span>
         </h1>
       </div>
+      <p class="text-center mt-4">
+        Nous proposons des formations sur les métiers du digital et du
+        numérique. Les formations sont :
+      </p>
       <div
         class="justify-start rounded-full lg:flex hidden space-x-8 mt-8 mx-auto px-1 bg-smart-blue"
       >
@@ -41,7 +46,7 @@ const show = ref(1);
               : 'bg-smart-blue px-4 py-5 text-lg rounded-l-full text-white border-b-4 font-bold border-smart-blue',
           ]"
         >
-          Community Manager
+          Community Management
         </button>
         <button
           type="button"
@@ -63,7 +68,18 @@ const show = ref(1);
               : 'bg-smart-blue px-4 py-5 text-lg text-white border-b-4 font-bold border-smart-blue',
           ]"
         >
-          Graphic Design
+          Infographie
+        </button>
+        <button
+          type="button"
+          @click="show = 4"
+          :class="[
+            show == 4
+              ? 'bg-white px-4 py-5 text-lg  text-smart-blue border-y-4 font-bold border-smart-blue'
+              : 'bg-smart-blue px-4 py-5 text-lg text-white border-b-4 font-bold border-smart-blue',
+          ]"
+        >
+          Création de site web
         </button>
       </div>
 
@@ -103,21 +119,24 @@ const show = ref(1);
         >
           Graphic Design
         </button>
+        <button
+          type="button"
+          @click="show = 4"
+          :class="[
+            show == 4
+              ? 'bg-white p-2 text-sm rounded-full text-smart-blue border-4 font-bold border-smart-blue'
+              : 'bg-smart-blue p-2 text-sm rounded-full text-white border-4 font-bold border-smart-blue',
+          ]"
+        >
+          Création de site web
+        </button>
       </div>
 
       <div class="py-6">
         <CommunityManger v-if="show == 1" />
         <PubFacebook v-if="show == 2" />
         <Design v-if="show == 3" />
-      </div>
-
-      <div class="flex justify-center items-center mt-8">
-        <a
-          href="#"
-          class="bg-smart-blue py-2 px-4 hover:bg-smart-blue-2 font-bold text-white z-0 right-0 rounded-full inline-block mx-auto text-lg sm:text-xl"
-        >
-          Je m'inscris
-        </a>
+        <Website v-if="show == 4" />
       </div>
     </div>
   </div>

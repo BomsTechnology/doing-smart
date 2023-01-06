@@ -104,7 +104,8 @@ async function goTo(route: string): Promise<void> {
         >
         <div class="inline-flex -mt-1 space-x-2 items-center">
           <a
-            href="#"
+            href="https://www.facebook.com/profile.php?id=100069228429506&mibextid=LQQJ4d"
+            target="_blank"
             class="flex justify-center items-center space-x-2 hover:underline font-semibold"
           >
             <svg

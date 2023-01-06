@@ -57,34 +57,18 @@ import { CheckCircleIcon, PlayCircleIcon } from "@heroicons/vue/24/solid";
         numérique !
       </h1>
       <p class="py-6 text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste ad
-        placeat expedita ab similique praesentium placeat expedita ab similique
-        praesentium
+        Doing Smart Sarl est une entreprise spécialisée dans le marketing
+        digital. Nous accompagnons les entreprises dans leurs déploiements sur
+        les médias sociaux.
       </p>
-      <div class="lg:flex items-center justify-between">
+      <div class="lg:flex items-start justify-between">
         <div>
-          <ul class="lg:text-lg text-sm space-y-2 mt-4">
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-smart-blue" />
-              <span>01 Mois en présentiel</span>
-            </li>
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-smart-blue" />
-              <span>Freelance</span>
-            </li>
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-smart-blue" />
-              <span>Emplois garantis pour les 03 meilleurs</span>
-            </li>
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-smart-blue" />
-              <span>02 mois de suivi</span>
-            </li>
-            <li class="flex space-x-2 items-center">
-              <CheckCircleIcon class="lg:h-5 lg:w-5 h-4 w-4 text-smart-blue" />
-              <span>Attestation de formation</span>
-            </li>
-          </ul>
+          <router-link
+            :to="{ name: 'about-us' }"
+            class="rounded-full shadow hover:shadow-lg bg-smart-blue hover:bg-smart-blue-2 px-4 py-3 mt-6 text-white uppercase font-medium text-xs sm:text-sm inline-block"
+          >
+            En Savoir plus
+          </router-link>
         </div>
         <div
           class="border-2 rounded-3xl lg:mt-0 mt-4 w-48 text-center flex flex-col justify-center items-center h-48 uppercase"

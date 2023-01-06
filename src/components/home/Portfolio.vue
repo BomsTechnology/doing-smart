@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import Production from "@/components/Production.vue";
+import { useCustomerStore } from "../../stores/customersStore";
+
+const customerStore = useCustomerStore();
 </script>
 
 <template>
@@ -25,9 +28,11 @@ import Production from "@/components/Production.vue";
       quae nostrum.
     </p>
     <div class="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-      <Production />
-      <Production />
-      <Production />
+      <Production
+        v-for="(customer, index) in customerStore.customers"
+        :key="index"
+        :data="customer"
+      />
     </div>
   </div>
 </template>

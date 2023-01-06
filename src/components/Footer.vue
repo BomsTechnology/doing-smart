@@ -46,12 +46,14 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/vue/24/outline";
             class="object-cover h-8"
           />
           <p class="text-sm py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            consectetur magnam possimus
+            Doing Smart Sarl est une entreprise spécialisée dans le marketing
+            digital. Nous accompagnons les entreprises dans leurs déploiements
+            sur les médias sociaux.
           </p>
           <div class="flex mt-2 space-x-2 items-center">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=100069228429506&mibextid=LQQJ4d"
+              target="_blank"
               class="flex justify-center items-center bg-smart-blue p-2 rounded-full"
             >
               <svg
@@ -70,6 +72,7 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/vue/24/outline";
             </a>
             <a
               href="#"
+              target="_blank"
               class="flex justify-center items-center bg-smart-blue p-2 rounded-full"
             >
               <svg
@@ -86,6 +89,7 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/vue/24/outline";
             </a>
             <a
               href="#"
+              target="_blank"
               class="flex justify-center items-center bg-smart-blue p-2 rounded-full"
             >
               <svg
@@ -102,6 +106,7 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/vue/24/outline";
             </a>
             <a
               href="#"
+              target="_blank"
               class="flex justify-center items-center bg-smart-blue p-2 rounded-full"
             >
               <svg

@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import Team from "@/components/Team.vue";
+import { useTeamStore } from "../../stores/teamsStore";
+
+const teamStore = useTeamStore();
 </script>
 
 <template>
@@ -17,18 +20,17 @@ import Team from "@/components/Team.vue";
       </h1>
     </div>
     <p class="py-10 max-w-3xl text-center mx-auto px-4">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rem
-      sed velit cumque ipsa! Quibusdam nesciunt cumque quisquam dolor,
-      doloremque officiis, dolorum voluptatem autem a unde cupiditate eveniet
-      quae nostrum.
+      Nous avons une équipe dynamique, professionnelle et talentueuse qui prends
+      à cœur la satisfaction du client et l’atteinte de ses objectifs.
     </p>
     <div
       class="grid w-full lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-6 mt-10"
     >
-      <Team />
-      <Team />
-      <Team />
-      <Team />
+      <Team
+        v-for="(team, index) in teamStore.teams"
+        :key="index"
+        :data="team"
+      />
     </div>
   </div>
 </template>

@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { PresentationChartBarIcon } from "@heroicons/vue/24/solid";
+import Service from "../types/Service";
+const props = defineProps<{
+  data: Service;
+}>();
 </script>
 <template>
   <div
@@ -12,12 +16,12 @@ import { PresentationChartBarIcon } from "@heroicons/vue/24/solid";
     </div>
     <div class="flex flex-col justify-center items-center h-full w-full">
       <span>
-        <PresentationChartBarIcon class="w-16 h-16 text-smart-blue" />
+        <img :src="data.image" class="w-18 h-18 object-cover" />
       </span>
       <h1
-        class="group-hover:text-white sm:text-gray-900 text-white w-3/4 transition-all duration-500 mt-8 text-2xl font-bold text-center"
+        class="group-hover:text-white sm:text-gray-900 text-white w-3/4 transition-all duration-500 mt-8 text-xl font-bold text-center"
       >
-        Community Management
+        {{ data.shortName }}
       </h1>
     </div>
   </div>

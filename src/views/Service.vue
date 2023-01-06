@@ -4,12 +4,14 @@ import Banner from "@/components/Banner.vue";
 import Link from "../types/Link";
 import Service from "@/components/Service.vue";
 import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";
+import { useServiceStore } from "../stores/servicesStore";
 const links: Array<Link> = [
   {
     label: "Services",
     route: "service",
   },
 ];
+const serviceStore = useServiceStore();
 </script>
 
 <template>
@@ -17,14 +19,11 @@ const links: Array<Link> = [
   <div>
     <div class="bg-gray-100 sm:py-32 py-10 xl:px-36 px-6 md:px-10">
       <div class="w-full grid-cols-1 grid lg:grid-cols-4 md:grid-cols-2 gap-8">
-        <Service />
-        <Service />
-        <Service />
-        <Service />
-        <Service />
-        <Service />
-        <Service />
-        <Service />
+        <Service
+          v-for="(service, index) in serviceStore.services"
+          :key="index"
+          :data="service"
+        />
       </div>
     </div>
     <div class="px-4 w-full">
@@ -73,8 +72,8 @@ const links: Array<Link> = [
           </h1>
         </div>
         <p class="mt-6 text-center max-w-lg text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi
-          esse ad, molestias ipsam temporibus
+          Nous suivons une méthodologie minutieuse dans le but de satisfaire
+          notre clientèle
         </p>
       </div>
       <div

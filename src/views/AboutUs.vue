@@ -70,11 +70,7 @@ const links: Array<Link> = [
         </h1>
         <p
           class="py-6 text-gray-500 lg:max-w-xs md:max-w-xl lg:text-left text-center"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste ad
-          placeat expedita ab similique praesentium placeat expedita ab
-          similique praesentium
-        </p>
+        ></p>
         <div
           class="border-2 rounded-3xl w-48 text-center flex flex-col justify-center items-center h-48 uppercase"
         >
@@ -158,10 +154,13 @@ const links: Array<Link> = [
             </div>
           </div>
         </div>
-        <p class="py-6 text-gray-500 max-w-xl mx-auto mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste ad
-          placeat expedita ab similique praesentium placeat expedita ab
-          similique praesentium
+        <p class="py-6 text-gray-500 max-w-xl mx-auto mt-4 text-center">
+          Doing Smart Sarl est une entreprise spécialisée dans le marketing
+          digital. Nous accompagnons les entreprises dans leurs déploiements sur
+          les médias sociaux. Ceci se fait par la création d’une identité
+          visuelle propre à l’entreprise, lui permettant de se démarquer des
+          autres ainsi augmentant sa valeur, sa notoriété et par conséquents sa
+          clientèle et son chiffre d’affaire.
         </p>
       </div>
     </div>

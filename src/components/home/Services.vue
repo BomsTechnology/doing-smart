@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import Service from "@/components/Service.vue";
 import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";
+import { useServiceStore } from "../../stores/servicesStore";
+import { ref, onMounted } from "vue";
+import Serv from "../../types/Service";
+const serviceStore = useServiceStore();
+const items = ref<Serv[]>(serviceStore.services.slice(0, 4));
 </script>
 <template>
   <div>
@@ -19,12 +24,12 @@ import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";
             </h1>
           </div>
           <p class="mt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            nisi esse ad, molestias ipsam temporibus repudiandae necessitatibus
-            enim, provident vero aliquam officia expedita aperiam dignissimos
-            illum possimus ea error in!
+            Notre objectif majeur est de rendre l’entreprise unique aux yeux des
+            consommateurs, de donner une notoriété sous frontière à cette
+            dernière ce qui la conduira plus aisément à l’atteinte de ses
+            objectifs.
           </p>
-          <ul class="mt-6 text-xs space-y-2 sm:text-sm">
+          <!-- <ul class="mt-6 text-xs space-y-2 sm:text-sm">
             <li class="flex items-center space-x-2">
               <div
                 class="border border-smart-blue h-auto block rounded-full p-1"
@@ -45,7 +50,7 @@ import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";
                 >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
               >
             </li>
-          </ul>
+          </ul> -->
           <router-link
             :to="{ name: 'service' }"
             class="rounded-full shadow hover:shadow-lg bg-smart-blue hover:bg-smart-blue-2 px-4 py-3 mt-6 text-white uppercase font-medium text-xs sm:text-sm inline-block"
@@ -57,10 +62,11 @@ import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";
       <div
         class="lg:w-3/5 w-full grid-cols-1 grid sm:grid-cols-2 lg:pl-8 lg:mt-0 mt-6 gap-4"
       >
-        <Service />
-        <Service />
-        <Service />
-        <Service />
+        <Service
+          v-for="(service, index) in items"
+          :key="index"
+          :data="service"
+        />
       </div>
     </div>
     <div class="px-4 w-full">
@@ -76,7 +82,7 @@ import { PhoneArrowUpRightIcon } from "@heroicons/vue/24/outline";
             </div>
             <div class="lg:text-left text-center">
               <h1 class="text-xl">Contactez-nous</h1>
-              <p class="text-4xl font-bold">987 233 0000</p>
+              <p class="text-4xl font-bold">+237657525812</p>
             </div>
           </div>
           <p class="lg:p-4 p-4 lg:text-left text-center">
