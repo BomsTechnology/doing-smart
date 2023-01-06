@@ -130,12 +130,14 @@ const links: Array<Link> = [
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Doloremque illum ipsum iusto
             </p>
-            <button
-              type="button"
+
+            <a
+              target="_blank"
+              href="'whatsapp://send?text=Bonjour, j'aurais besoin de vos services'"
               class="rounded-full shadow hover:shadow-lg bg-white hover:bg-smart-blue-2 px-4 py-3 mt-6 text-smart-blue hover:text-white uppercase font-medium text-xs sm:text-sm inline-block"
             >
               let's chat
-            </button>
+            </a>
           </div>
         </div>
         <div

@@ -91,12 +91,13 @@ const items = ref<Serv[]>(serviceStore.services.slice(0, 4));
           </p>
         </div>
         <div class="lg:w-1/3 w-full flex justify-center lg:p-0 p-4">
-          <button
-            type="button"
-            class="bg-white px-6 py-2 uppercase font-medium rounded-full text-smart-blue hover:bg-smart-blue-2 hover:text-white transition-colors"
+          <a
+            target="_blank"
+            href="'whatsapp://send?text=Bonjour, j'aurais besoin de vos services'"
+            class="bg-white px-6 py-2 uppercase font-medium rounded-full text-center text-smart-blue hover:bg-smart-blue-2 hover:text-white transition-colors"
           >
             prennez rendez-vous
-          </button>
+          </a>
         </div>
       </div>
     </div>
