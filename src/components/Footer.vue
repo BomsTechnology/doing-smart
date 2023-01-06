@@ -129,15 +129,27 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/vue/24/outline";
         <div>
           <h1 class="font-bold text-xl sm:text-2xl">Liens utiles</h1>
           <ul class="mt-4 space-y-2 text-sm">
-            <li>A Propos de nous</li>
-            <li>Services</li>
+            <li>
+              <router-link :to="{ name: 'about-us' }" class="hover:underline"
+                >A Propos de nous</router-link
+              >
+            </li>
+            <li>
+              <router-link :to="{ name: 'service' }" class="hover:underline">
+                Services</router-link
+              >
+            </li>
           </ul>
         </div>
         <div>
           <h1 class="font-bold text-xl sm:text-2xl">Soutien</h1>
           <ul class="mt-4 space-y-2 text-sm">
-            <li>Contact</li>
-            <li>FAQ</li>
+            <li>
+              <router-link :to="{ name: 'contact' }" class="hover:underline"
+                >Contact</router-link
+              >
+            </li>
+            <li><a href="#" class="hover:underline">FAQ</a></li>
           </ul>
         </div>
         <div>

@@ -34,8 +34,9 @@ const links: Array<Link> = [
         </h1>
       </div>
       <p class="mt-6 text-center max-w-lg text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi
-        esse ad, molestias ipsam temporibus
+        vous souhaitez en savoir plus sur nos expertises, notre agence digitale
+        et les talents qui l animent ? Venez discuter avec eux de votre projet
+        et obtenez des solutions pertinentes !
       </p>
       <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 mt-8">
         <div class="bg-white shadow-xl rounded-3xl p-4">
@@ -50,7 +51,9 @@ const links: Array<Link> = [
               <h1 class="font-bold text-smart-blue text-xl">
                 Rendez-nous visite
               </h1>
-              <p class="text-gray-500 text-sm mt-2">Ndokoti, Base Ketch</p>
+              <p class="text-gray-500 text-sm mt-2 whitespace-normal break-all">
+                Ndokoti, Base Ketch
+              </p>
             </div>
           </div>
         </div>
@@ -64,7 +67,9 @@ const links: Array<Link> = [
             <div class="lg:text-left text-center">
               <h3 class="font-bold text-gray-900 text-sm">24*7 Service...</h3>
               <h1 class="font-bold text-smart-blue text-xl">Appelez-nous</h1>
-              <p class="text-gray-500 md:text-left text-sm text-center mt-2">
+              <p
+                class="text-gray-500 md:text-left text-sm text-center whitespace-normal break-all mt-2"
+              >
                 +237 657 52 58 12
               </p>
             </div>
@@ -82,7 +87,9 @@ const links: Array<Link> = [
                 Laissez un message...
               </h3>
               <h1 class="font-bold text-smart-blue text-xl">Adresse mail</h1>
-              <p class="text-gray-500 md:text-left text-sm text-center mt-2">
+              <p
+                class="text-gray-500 md:text-left text-sm text-center whitespace-normal break-all mt-2"
+              >
                 contactdoingsmart@gmail.com
               </p>
             </div>
@@ -102,8 +109,10 @@ const links: Array<Link> = [
               <h1 class="font-bold text-smart-blue text-xl">
                 Horaire d'ouverture
               </h1>
-              <p class="text-gray-500 md:text-left text-sm text-center mt-2">
-                Lun – Ven : 09h – 18h
+              <p
+                class="text-gray-500 md:text-left text-sm whitespace-normal break-all text-center mt-2"
+              >
+                Lun – Sam : 09h – 18h
               </p>
             </div>
           </div>
@@ -127,8 +136,7 @@ const links: Array<Link> = [
             </div>
             <h1 class="font-bold mt-4 text-xl">Chat With Live !</h1>
             <p class="text-sm text-center mt-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Doloremque illum ipsum iusto
+              Echangez directement avec un membre de notre équipe
             </p>
 
             <a
@@ -145,7 +153,7 @@ const links: Array<Link> = [
         >
           <img
             src="@/assets/img28.png"
-            class="object-cover justify-center lg:h-full mx-auto sm:w-auto w-60 bg-transparent left-0 lg:absolute z-10"
+            class="object-cover justify-center lg:h-full mx-auto sm:w-auto w-60 bg-transparent -left-10 lg:absolute z-10"
             alt=""
           />
 

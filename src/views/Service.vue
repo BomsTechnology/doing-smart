@@ -39,12 +39,14 @@ const serviceStore = useServiceStore();
             </div>
             <div class="lg:text-left text-center">
               <h1 class="text-xl">Contactez-nous</h1>
-              <p class="text-4xl font-bold">987 233 0000</p>
+              <p class="text-4xl font-bold">+237657525812</p>
             </div>
           </div>
           <p class="lg:p-4 p-4 lg:text-left text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            inventore eaque maxime. Suscipit dignissimos cum molestiae,
+            Vous êtes une entreprise, un particulier, ou une association ?
+            Souhaitez-vous avoir une visibilité sur internet? Ou augmenter vos
+            ventes avec votre boutique en ligne ? Vous voulez augmenter votre
+            trafic et générer plus de prospects ?
           </p>
         </div>
         <div class="lg:w-1/3 w-full flex justify-center lg:p-0 p-4">

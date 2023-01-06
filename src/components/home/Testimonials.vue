@@ -5,7 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css/navigation";
 import "swiper/css";
 import { Autoplay, Navigation } from "swiper";
+import { useTestimonialStore } from "../../stores/testimonialsStore";
 const modules = [Autoplay, Navigation];
+
+const testimonialStore = useTestimonialStore();
 </script>
 <template>
   <div
@@ -27,13 +30,11 @@ const modules = [Autoplay, Navigation];
       <div
         class="mt-6 flex lg:flex-row flex-col lg:justify-start justify-center items-center lg:space-x-10 space-x-0 lg:space-y-0 space-y-4"
       >
-        <h1 class="font-bold lg:text-5xl text-2xl md:text-3xl">
+        <h1 class="font-bold lg:text-5xl text-4xl">
           <span class="text-smart-blue">Commentaires</span> de clients
         </h1>
         <p class="sm:w-2/5 w-full lg:px-0 px-4 lg:text-left text-center">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. At odit,
-          vero beatae repellat a consectetur quaerat omnis possimus perspiciatis
-          illum assumenda laborum
+          Découvrez ce que nos clients pensent de nous !!!
         </p>
       </div>
       <swiper
@@ -61,8 +62,11 @@ const modules = [Autoplay, Navigation];
         class="mt-10 sm:mt-20 !p-8"
         :modules="modules"
       >
-        <swiper-slide v-for="i in 5" :key="i">
-          <Testimonial />
+        <swiper-slide
+          v-for="(testimonial, index) in testimonialStore.testimonials"
+          :key="index"
+        >
+          <Testimonial :data="testimonial" />
         </swiper-slide>
       </swiper>
     </div>

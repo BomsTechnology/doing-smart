@@ -18,7 +18,7 @@ import Article from "../Article.vue";
         <span class="text-smart-blue">Blog</span> & Nouvelles
       </h1>
     </div>
-    <p class="py-10 max-w-3xl text-center mx-auto px-4">
+    <p class="py-10 max-w-3xl text-center mx-auto px-4 leading-7">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rem
       sed velit cumque ipsa! Quibusdam nesciunt cumque quisquam dolor,
       doloremque officiis, dolorum voluptatem autem a unde cupiditate eveniet

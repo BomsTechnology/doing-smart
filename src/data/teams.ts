@@ -5,8 +5,8 @@
 export default [
   {
     image: "",
-    name: "Arthur Kamsu",
-    post: "CEO, Directeur Marketing",
+    name: "Steve Foka",
+    post: "PDG, Directeur",
     facebook: "",
     instagram: "",
     youtube: "",
@@ -15,7 +15,7 @@ export default [
   {
     image: "",
     name: "Alain Tatang",
-    post: "Chargé des formations",
+    post: "Directeur pédagogique",
     facebook: "",
     instagram: "",
     youtube: "",
@@ -23,8 +23,8 @@ export default [
   },
   {
     image: "",
-    name: "John Doe",
-    post: "Développeur",
+    name: "Arthur Kamsu",
+    post: "Directeur Marketing",
     facebook: "",
     instagram: "",
     youtube: "",
@@ -32,8 +32,8 @@ export default [
   },
   {
     image: "",
-    name: "Gerad White",
-    post: "Directeur RH",
+    name: "xxxxxxxxx",
+    post: "xxxxxxxxx",
     facebook: "",
     instagram: "",
     youtube: "",

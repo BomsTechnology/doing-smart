@@ -18,14 +18,14 @@ const items = ref<Serv[]>(serviceStore.services.slice(0, 4));
             Liste des services
           </div>
           <div class="mt-6">
-            <h1 class="font-bold lg:text-5xl text-2xl md:text-3xl">
+            <h1 class="font-bold lg:text-5xl text-4xl">
               <span class="text-smart-blue">Services</span> Nous Pouvons vous
               aider
             </h1>
           </div>
           <p class="mt-6">
             Notre objectif majeur est de rendre l’entreprise unique aux yeux des
-            consommateurs, de donner une notoriété sous frontière à cette
+            consommateurs, de donner une notoriété sans frontière à cette
             dernière ce qui la conduira plus aisément à l’atteinte de ses
             objectifs.
           </p>
@@ -86,10 +86,13 @@ const items = ref<Serv[]>(serviceStore.services.slice(0, 4));
             </div>
           </div>
           <p class="lg:p-4 p-4 lg:text-left text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            inventore eaque maxime. Suscipit dignissimos cum molestiae,
+            Vous êtes une entreprise, un particulier, ou une association ?
+            Souhaitez-vous avoir une visibilité sur internet? Ou augmenter vos
+            ventes avec votre boutique en ligne ? Vous voulez augmenter votre
+            trafic et générer plus de prospects ?
           </p>
         </div>
+
         <div class="lg:w-1/3 w-full flex justify-center lg:p-0 p-4">
           <a
             target="_blank"

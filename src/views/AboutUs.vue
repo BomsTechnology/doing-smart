@@ -18,7 +18,8 @@ const links: Array<Link> = [
   >
     <div class="relative lg:mt-0 mt-4 w-full h-[500px]">
       <a
-        href="#"
+        href="https://fb.watch/hU4unJk6OI/?mibextid=cr9u03"
+        target="_blank"
         class="h-2/3 sm:w-1/2 w-4/6 absolute z-20 p-2 right-5 top-20 bg-white rounded-3xl overflow-hidden"
       >
         <img

@@ -250,7 +250,8 @@ async function goTo(route: string): Promise<void> {
         </div>
         <div class="flex justify-center items-center space-x-3">
           <a
-            href="#"
+            href="https://www.facebook.com/profile.php?id=100069228429506&mibextid=LQQJ4d"
+            target="_blank"
             class="p-2 rounded-full border-2 border-smart-blue text-smart-blue flex justify-center items-center"
           >
             <svg
@@ -269,6 +270,7 @@ async function goTo(route: string): Promise<void> {
           </a>
           <a
             href="#"
+            target="_blank"
             class="p-2 rounded-full border-2 border-smart-blue text-smart-blue flex justify-center items-center"
           >
             <svg
@@ -288,6 +290,7 @@ async function goTo(route: string): Promise<void> {
           </a>
           <a
             href="#"
+            target="_blank"
             class="p-2 rounded-full border-2 border-smart-blue text-smart-blue flex justify-center items-center"
           >
             <svg
@@ -304,6 +307,7 @@ async function goTo(route: string): Promise<void> {
           </a>
           <a
             href="#"
+            target="_blank"
             class="p-2 rounded-full border-2 border-smart-blue text-smart-blue flex justify-center items-center"
           >
             <svg

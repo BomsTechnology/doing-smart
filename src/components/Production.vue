@@ -25,11 +25,15 @@ const props = defineProps<{
       >
         {{ data.customerName }}
       </h1>
-      <p
+      <div
         class="mt-4 group-hover:text-white text-white sm:text-transparent transition-all"
       >
-        {{ data.description }}
-      </p>
+        <p>
+          <strong>{{ data.followers }} </strong> <span>Followers</span> -
+          <strong>{{ data.interactions }}</strong> Interactions
+        </p>
+        <p>{{ data.publications }}</p>
+      </div>
     </div>
   </a>
 </template>

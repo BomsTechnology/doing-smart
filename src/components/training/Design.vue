@@ -24,7 +24,7 @@ import { CheckCircleIcon } from "@heroicons/vue/24/solid";
       </div>
 
       <div class="py-10">
-        <p class="mt-6 text-center">
+        <p class="mt-6 text-center leading-7">
           Création de design grâce aux outils/logiciels de la suite Adobe.
           Devenir un graphiste professionnel après 3 mois.
         </p>
@@ -59,7 +59,8 @@ import { CheckCircleIcon } from "@heroicons/vue/24/solid";
 
   <div class="flex justify-center items-center mt-8">
     <a
-      href="#"
+      href="https://wa.me/message/LTIV7YM22E5CB1"
+      target="_blank"
       class="bg-smart-blue py-2 px-4 hover:bg-smart-blue-2 font-bold text-white z-0 right-0 rounded-full inline-block mx-auto text-lg sm:text-xl"
     >
       Je m'inscris

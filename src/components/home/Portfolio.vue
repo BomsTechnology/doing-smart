@@ -21,11 +21,14 @@ const customerStore = useCustomerStore();
         <span class="text-smart-blue">Activités</span> & Réalisations
       </h1>
     </div>
-    <p class="py-10 max-w-3xl text-center mx-auto px-4">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rem
-      sed velit cumque ipsa! Quibusdam nesciunt cumque quisquam dolor,
-      doloremque officiis, dolorum voluptatem autem a unde cupiditate eveniet
-      quae nostrum.
+    <p class="py-10 max-w-3xl text-center mx-auto px-4 leading-7 leading-7">
+      ILS NOUS ONT FAIT CONFIANCE POURQUOI PAS VOUS 📲NOUS GÉRONS VOTRE
+      COMMUNAUTÉ EN LIGNE À BONNE ESCIENCE ✅Nous vous attribuons un community
+      manager recruté parmi les meilleurs apprenants lors de nos formations ✅
+      occupez vous désormais de vos client en boutique nous gérons le reste ✅un
+      contenu de qualité est généré quotidiennement ✅des shooting photo pour
+      vos produits ✅des contenus vidéo pour vos produits. ✅un reporting
+      mensuel des activités ✅création de base de données exploitable
     </p>
     <div class="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-6 mt-10">
       <Production

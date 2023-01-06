@@ -7,7 +7,8 @@ import { CheckCircleIcon, PlayCircleIcon } from "@heroicons/vue/24/solid";
   >
     <div class="relative lg:w-1/2 lg:mt-0 mt-4 w-full h-[500px]">
       <a
-        href="#"
+        href="https://fb.watch/hU4unJk6OI/?mibextid=cr9u03"
+        target="_blank"
         class="h-60 w-60 absolute z-20 p-2 left-5 top-5 bg-white rounded-full overflow-hidden"
       >
         <img
@@ -52,7 +53,7 @@ import { CheckCircleIcon, PlayCircleIcon } from "@heroicons/vue/24/solid";
         <h1>A propos de nous</h1>
         <div class="w-2 h-2 bg-smart-blue rounded-full"></div>
       </div>
-      <h1 class="font-bold lg:text-5xl text-2xl md:text-3xl mt-6">
+      <h1 class="font-bold lg:text-5xl text-4xl mt-6">
         <span class="text-smart-blue">Introduction</span> À la meilleure agence
         numérique !
       </h1>

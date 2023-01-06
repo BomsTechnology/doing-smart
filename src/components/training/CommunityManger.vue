@@ -24,7 +24,7 @@ import { CheckCircleIcon } from "@heroicons/vue/24/solid";
       </div>
 
       <div class="py-10">
-        <p class="mt-6 text-center">
+        <p class="mt-6 text-center leading-7">
           Le community management est l’art de mettre en place des actions qui
           visent à promouvoir et rendre visible un produit ou un service au
           travers des réseaux sociaux.
@@ -77,7 +77,8 @@ import { CheckCircleIcon } from "@heroicons/vue/24/solid";
 
   <div class="flex justify-center items-center mt-8">
     <a
-      href="#"
+      href="https://forms.gle/U4drmyiHUQkCicne7"
+      target="_blank"
       class="bg-smart-blue py-2 px-4 hover:bg-smart-blue-2 font-bold text-white z-0 right-0 rounded-full inline-block mx-auto text-lg sm:text-xl"
     >
       Je m'inscris

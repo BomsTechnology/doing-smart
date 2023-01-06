@@ -12,16 +12,17 @@
         <h1>S'abonner</h1>
         <div class="w-2 h-2 bg-smart-blue rounded-full"></div>
       </div>
-      <h1 class="font-bold lg:text-5xl text-2xl md:text-3xl mt-6">
+      <h1 class="font-bold lg:text-5xl text-4xl mt-6">
         <span class="text-smart-blue">S'abonner</span> Pour obtenir la dernière
         mise à jour de notre part
       </h1>
     </div>
     <div class="lg:w-1/2 w-full lg:px-8">
       <p class="lg:mt-0 mt-6">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga nihil
-        praesentium incidunt ducimus itaque fugiat vel labore modi perferendis
-        totam aut ipsam rerum odit, eum id, laboriosam molestias et iure.
+        Nos experts du digital sont à votre écoute. Bénéficiez d'un audit
+        gratuit de votre projet et d'un accompagnement personnalisé pour vous
+        mener à votre succès. Vous pouvez nous contacter en remplissant le
+        formulaire de contact, nous vous répondrons dans un délai de 24h.
       </p>
       <div class="block lg:hidden mt-10">
         <input

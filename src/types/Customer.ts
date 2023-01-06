@@ -4,4 +4,7 @@ export default interface Customer {
   customerName: string;
   description: string;
   link: string;
+  followers: string;
+  interactions: string;
+  publications: string;
 }

@@ -19,7 +19,7 @@ const teamStore = useTeamStore();
         <span class="text-smart-blue">Equipes</span> Membres
       </h1>
     </div>
-    <p class="py-10 max-w-3xl text-center mx-auto px-4">
+    <p class="py-10 max-w-3xl text-center mx-auto px-4 leading-7">
       Nous avons une équipe dynamique, professionnelle et talentueuse qui prends
       à cœur la satisfaction du client et l’atteinte de ses objectifs.
     </p>
